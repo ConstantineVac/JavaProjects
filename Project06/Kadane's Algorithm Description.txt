@@ -1,0 +1,24 @@
+a) The algorithm is called Kadane's algorithm, and it is a linear algorithm with a time complexity of O(n). It is used to solve the "maximum sum subarray" problem, which involves finding the contiguous subarray with the largest sum within an array of integers.
+
+The algorithm can be described as follows:
+
+	1) Initialize two variables: one for the current maximum sum (maxSum) and one for the overall maximum sum found 	so far (globalMax).
+
+	2) Iterate through each element of the array.
+
+	3) For each element, add it to the current maximum sum (maxSum).
+
+	4) If maxSum becomes negative, reset it to zero (maxSum = 0) and continue to the next element.
+
+	5) At each step, update the globalMax if maxSum is greater than it.
+
+	6) Continue this process until all elements of the array have been examined.
+
+	7) At the end, globalMax will contain the maximum sum of the subarray.
+
+
+c) Time complexity proof:
+
+The Kadane's algorithm is linear, as it examines each element of the array only once. Its execution time depends linearly on the size of the array, so the time complexity of the Kadane's algorithm is O(n), where n is the size of the array.
+
+Thus, the Kadane's algorithm solves the "maximum sum subarray" problem with a time complexity of O(n).
